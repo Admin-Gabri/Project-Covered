@@ -1,0 +1,54 @@
+{
+    "name": "VGMSA03",
+    "id": "/subscriptions/f0970436-06ed-4425-9fdb-5fe9866feda0/resourceGroups/Proyecto-01/providers/Microsoft.Compute/virtualMachines/VGMSA03",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "eastus",
+    "properties": {
+        "vmId": "8655dee8-7bdc-4548-b676-e122045728fa",
+        "hardwareProfile": {
+            "vmSize": "Standard_D2s_v3"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2016-Datacenter",
+                "version": "latest"
+            },
+            "osDisk": {
+                "osType": "Windows",
+                "name": "VGMSA03_OsDisk_1_5eaceecdd8844abc975337399e821210",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "storageAccountType": "Premium_LRS",
+                    "id": "/subscriptions/f0970436-06ed-4425-9fdb-5fe9866feda0/resourceGroups/Proyecto-01/providers/Microsoft.Compute/disks/VGMSA03_OsDisk_1_5eaceecdd8844abc975337399e821210"
+                },
+                "diskSizeGB": 127
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "VGMSA03",
+            "adminUsername": "VGM",
+            "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true
+            },
+            "secrets": []
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/f0970436-06ed-4425-9fdb-5fe9866feda0/resourceGroups/Proyecto-01/providers/Microsoft.Network/networkInterfaces/vgmsa03901"
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "provisioningState": "Succeeded"
+    }
+}
